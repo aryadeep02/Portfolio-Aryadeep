@@ -84,7 +84,8 @@ Interactive platform for **visualizing Data Structures & Algorithms**.
 
 ---
 
-<img width="1260" height="681" alt="Portfolio Screenshot" src="https://github.com/user-attachments/assets/7684f089-1280-44fa-a9b8-b97f0c0e86b4" />
+<img width="1280" height="707" alt="Screenshot 2025-09-06 at 11 46 38 PM" src="https://github.com/user-attachments/assets/08cc1ff7-3186-422a-9743-75d2434775cb" />
+
 
 ---
 ⭐ If you like this project, feel free to fork or star the repo!
