@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryadeep Varshney - Tech Portfolio 2025</title>
+    <title>Aryadeep Varshney - AI/ML Engineer & Software Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
@@ -16,10 +14,20 @@
     <!-- Particle Background -->
     <div id="particles-js"></div>
 
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-sun" id="themeIcon"></i>
+    </button>
+
     <!-- Loading Screen -->
     <div class="loader-wrapper">
         <div class="loader">
-            <div class="loader-text">INITIALIZING...</div>
+            <div class="loader-inner">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="loader-text">INITIALIZING PORTFOLIO...</div>
         </div>
     </div>
 
@@ -29,7 +37,7 @@
             <div class="logo">
                 <div class="logo-badge">
                     <span class="logo-text">AV</span>
-                    <span class="logo-role">Aspiring AI Engineer</span>
+                    <span class="logo-role">Software Engineer</span>
                 </div>
             </div>
             <ul class="nav-menu">
@@ -37,6 +45,7 @@
                 <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
                 <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
                 <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate"></i> Certifications</a></li>
                 <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -49,97 +58,166 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg-animation">
+            <div class="gradient-sphere"></div>
+            <div class="gradient-sphere"></div>
+        </div>
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="glitch" data-text="Aryadeep Varshney">Aryadeep Varshney</h1>
-                <p class="subtitle typing-text"></p>
-                <div class="hero-tags">
-                    <span class="tag animate-tag">Java</span>
-                    <span class="tag animate-tag">Python</span>
-                    <span class="tag animate-tag">AI/ML</span>
-                    <span class="tag animate-tag">React.js</span>
-                    <span class="tag animate-tag">Flask</span>
+                <div class="hero-badge animate-fade-in">
+                    <span>🚀 Open to Opportunities</span>
                 </div>
-                <div class="cta-buttons">
+                <h1 class="hero-title animate-slide-up">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name gradient-text">Aryadeep Varshney</span>
+                </h1>
+                <p class="hero-subtitle typing-text"></p>
+                <div class="hero-description animate-fade-in">
+                    <p>Aspiring Software Engineer and passionate Computer Science undergraduate with foundations in Data Structures,
+                        Algorithms, and Machine Learning. Skilled in full-stack development, system design, and problem-solving.
+                        Seeking opportunities to contribute by applying expertise in AI engineering and real-world software solutions.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat animate-scale">
+                        <h3 class="stat-number" data-target="500">_</h3>
+                        <p>Problems Solved</p>
+                        <p>On Leetcode & CodeChef</p>
+                    </div>
+                    <div class="stat animate-scale">
+                        <h3 class="stat-number" data-target="95">0</h3>
+                        <span>%</span>
+                        <p>ML Accuracy</p>
+                    </div>
+                    <div class="stat animate-scale">
+                        <h3 class="stat-number" data-target="3">0</h3>
+                        <p>Major Projects</p>
+                    </div>
+                </div>
+                <div class="cta-buttons animate-slide-up">
                     <a href="#projects" class="btn btn-primary">
-                        <span>View Projects</span>
+                        <span>Explore My Work</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="Usage/Resumee.pdf" class="btn btn-secondary">
-                        <span>Download CV</span>
+                    <a href="Resume/AryadeepFinalResume.pdf" download class="btn btn-secondary">
+                        <span>Download Resume</span>
                         <i class="fas fa-download"></i>
                     </a>
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/aryadeep02" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/aryadeep21" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/aryadeep22" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="https://hackerrank.com/ARYADEEP_V" class="social-link"><i class="fab fa-hackerrank"></i></a>
+                <div class="social-links animate-fade-in">
+                    <a href="https://github.com/aryadeep02" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/aryadeep21" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/aryadeep_varshney/" target="_blank" class="social-link" title="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="mailto:aryadeepv21@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image animate-fade-in">
                 <div class="image-container">
-                    <img src="Pictures/pfp.png" alt="Aryadeep Varshney" class="profile-img">
-                    <div class="image-border"></div>
+                    <div class="image-placeholder">
+                        <!-- Add your profile image here -->
+                        <img src="Pictures/profile.jpg" alt="Aryadeep Varshney" class="profile-img">
+                    </div>
+                    <div class="image-decoration">
+                        <div class="floating-tech">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-tech">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="floating-tech">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="floating-tech">
+                            <i class="fab fa-java"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <i class="fas fa-chevron-down"></i>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <h2 class="section-title" data-aos="fade-up">
+                <span>About Me</span>
+            </h2>
             <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <div class="about-img-wrapper">
-                        <img src="Pictures/pfp.png" alt="About Aryadeep">
-                        <div class="floating-icons">
-                            <i class="fab fa-python"></i>
-                            <i class="fab fa-java"></i>
-                            <i class="fab fa-react"></i>
-                            <i class="fas fa-brain"></i>
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Aspiring Software Engineer & AI Enthusiast</h3>
+                    <p>I'm currently pursuing my B.Tech in Computer Science at PSIT Kanpur, where I've maintained a CGPA of 7.5 while diving deep into the fascinating world of AI and machine learning. My journey began with a simple curiosity about how machines can learn, and now I'm working as an AI Model Trainer at Outlier.ai, where I help improve AI systems that impact millions of users.</p>
+
+                    <p>What drives me is the potential to create technology that genuinely helps people. Whether it's developing a disease prediction system that could save lives or building tools that make complex information more accessible, I believe in the power of code to make a positive difference.</p>
+
+                    <p>Beyond academics, I've solved over 500 problems on competitive programming platforms, achieved a 5★ rating on HackerRank, and led technical initiatives as Tech Co-Head at Ignitia 2025. I'm always eager to learn, collaborate, and tackle new challenges.</p>
+
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.Tech in Computer Science (2022-2026)</p>
+                                <p>CGPA: 7.5 | PSIT, Kanpur</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Experience</h4>
+                                <p>ML Model Trainer at Outlier.ai</p>
+                                <p>Dec 2024 - Feb 2025</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Kanpur, Uttar Pradesh</p>
+                                <p>+91-6392853068</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-text" data-aos="fade-left">
-                    <h3>Final Year Student at PSIT, Kanpur</h3>
-                    <p>Hi, I'm Aryadeep Varshney, an aspiring AI Engineer with 6+ months of hands-on experience. I'm
-                        driven by the potential of technology to make life better, and I design solutions that are not
-                        just innovative, but genuinely helpful for users.</p>
-
-                    <p>With a strong academic foundation in computer science and a deep passion for AI/ML, I have
-                        successfully delivered impactful projects across diverse domains—consistently striving for
-                        technical excellence, innovation, and real-world applicability.</p>
-                    <p>My journey includes solving 300+ problems on LeetCode & CodeChef, achieving 5★ rating on
-                        HackerRank, and qualifying for the Flipkart Grid 5.0 Round 1. I'm actively seeking opportunities
-                        to contribute towards real-world projects.</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>7.5 CGPA</h4>
-                                <p>Academic Score</p>
-                            </div>
-                        </div>
-                        <div class="stat-item">
+                <div class="about-highlights" data-aos="fade-left">
+                    <div class="highlight-card">
+                        <div class="icon-wrapper">
                             <i class="fas fa-trophy"></i>
-                            <div>
-                                <h4>Tech Co-Head</h4>
-                                <p>Ignitia-2025</p>
-                            </div>
                         </div>
-                        <div class="stat-item">
-                            <i class="fas fa-code"></i>
-                            <div>
-                                <h4>300+</h4>
-                                <p>Problems Solved on Leetcode, CodeChef and other platforms</p>
-                            </div>
+                        <h4>Leadership</h4>
+                        <p>Led 20+ member team as Department Co-Head at Ignitia 2025 Tech Fest, organizing successful technical events.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-code-branch"></i>
                         </div>
+                        <h4>Problem Solver</h4>
+                        <p>500+ problems solved across LeetCode, CodeChef & HackerRank. Achieved 5★ rating on HackerRank.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Innovation</h4>
+                        <p>Built ML models with up to 95% accuracy and created real-time applications serving thousands of users.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Collaboration</h4>
+                        <p>Qualified for Flipkart Grid 5.0, working with talented peers on cutting-edge solutions.</p>
                     </div>
                 </div>
             </div>
@@ -149,7 +227,9 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <h2 class="section-title" data-aos="fade-up">
+                <span>Technical Arsenal</span>
+            </h2>
             <div class="skills-container">
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
                     <div class="category-header">
@@ -159,7 +239,7 @@
                     <div class="skill-items">
                         <div class="skill-item" data-level="90">
                             <div class="skill-info">
-                                <span>Python</span>
+                                <span>Java</span>
                                 <span class="skill-percent">90%</span>
                             </div>
                             <div class="skill-bar">
@@ -168,7 +248,7 @@
                         </div>
                         <div class="skill-item" data-level="85">
                             <div class="skill-info">
-                                <span>Java</span>
+                                <span>Python</span>
                                 <span class="skill-percent">85%</span>
                             </div>
                             <div class="skill-bar">
@@ -184,26 +264,24 @@
                                 <div class="skill-progress"></div>
                             </div>
                         </div>
+                        <div class="skill-item" data-level="75">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
                     <div class="category-header">
                         <i class="fas fa-laptop-code"></i>
-                        <h3>Frontend</h3>
+                        <h3>Frameworks & Libraries</h3>
                     </div>
                     <div class="skill-items">
-
-                        <div class="skill-item" data-level="90">
-                            <div class="skill-info">
-                                <span>HTML/CSS</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-
                         <div class="skill-item" data-level="85">
                             <div class="skill-info">
                                 <span>React.js</span>
@@ -213,10 +291,27 @@
                                 <div class="skill-progress"></div>
                             </div>
                         </div>
-
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info">
+                                <span>Flask</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span>Scikit-learn</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
                         <div class="skill-item" data-level="75">
                             <div class="skill-info">
-                                <span>Tailwind CSS</span>
+                                <span>Hugging Face</span>
                                 <span class="skill-percent">75%</span>
                             </div>
                             <div class="skill-bar">
@@ -229,22 +324,22 @@
                 <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
                     <div class="category-header">
                         <i class="fas fa-brain"></i>
-                        <h3>AI/ML</h3>
+                        <h3>AI/ML & Data Science</h3>
                     </div>
                     <div class="skill-items">
-                        <div class="skill-item" data-level="80">
+                        <div class="skill-item" data-level="85">
                             <div class="skill-info">
-                                <span>Numpy</span>
-                                <span class="skill-percent">80%</span>
+                                <span>NumPy & Pandas</span>
+                                <span class="skill-percent">85%</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-level="85">
+                        <div class="skill-item" data-level="80">
                             <div class="skill-info">
-                                <span>Pandas</span>
-                                <span class="skill-percent">85%</span>
+                                <span>Matplotlib</span>
+                                <span class="skill-percent">80%</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress"></div>
@@ -252,8 +347,17 @@
                         </div>
                         <div class="skill-item" data-level="75">
                             <div class="skill-info">
-                                <span>Scikit-Learn</span>
+                                <span>Machine Learning</span>
                                 <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="70">
+                            <div class="skill-info">
+                                <span>System Design</span>
+                                <span class="skill-percent">70%</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress"></div>
@@ -268,96 +372,161 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <h2 class="section-title" data-aos="fade-up">
+                <span>Featured Projects</span>
+            </h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-image">
-                        <img src="Pictures/MR1.png" alt="Medicine Recommendation System">
+                        <div class="project-img-placeholder">
+                            <!-- Add project screenshot here -->
+                            <img src="Pictures/curechat.jpg" alt="CureChat AI">
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/aryadeep02/Health-Detection" class="project-link-icon"><i
-                                    class="fab fa-github"></i></a>
-                            <a href="#" class="project-link-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/aryadeep02/Health-Detection" target="_blank" class="project-link-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" onclick="openProjectModal('curechat')" class="project-link-icon">
+                                <i class="fas fa-expand"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Medicine Recommendation System</h3>
-                        <p>AI-powered platform predicting diseases from symptoms with 100% accuracy using SVM, Random
-                            Forest, and Gradient Boosting algorithms. Features personalized medicine recommendations and
-                            dietary suggestions.</p>
+                        <h3>CureGenix AI</h3>
+                        <p class="project-tagline">Your Personal Health Assistant</p>
+                        <p>An intelligent disease prediction system that transforms how people understand their health. By analyzing symptoms through advanced ML algorithms, CureGenix AI provides accurate disease predictions with 95% accuracy, along with personalized medicine recommendations, exercise plans and dietary plans.</p>
                         <div class="project-features">
-                            <span><i class="fas fa-check"></i> Disease Prediction</span>
-                            <span><i class="fas fa-check"></i> Medicine Suggestions</span>
-                            <span><i class="fas fa-check"></i> Dietary Recommendations</span>
+                            <span><i class="fas fa-check"></i> 95% Prediction Accuracy</span>
+                            <span><i class="fas fa-check"></i> Real-time Analysis</span>
+                            <span><i class="fas fa-check"></i> Personalized Recommendations</span>
                         </div>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">ML</span>
-                            <span class="tech-tag">SVM</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Bootstrap</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2: InfoSnap -->
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="project-image">
-                        <img src="spam-classifier.jpg" alt="Email Spam Classifier">
+                        <div class="project-img-placeholder">
+                            <!-- Add project screenshot here -->
+                            <img src="Pictures/infosnap.jpg" alt="InfoSnap">
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/yourusername/spam-classifier" class="project-link-icon"><i
-                                    class="fab fa-github"></i></a>
-                            <a href="https://health-detection-jgy3.onrender.com" class="project-link-icon"><i
-                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/aryadeep02/InfoSnap" target="_blank" class="project-link-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" onclick="openProjectModal('infosnap')" class="project-link-icon">
+                                <i class="fas fa-expand"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Email Spam Classifier</h3>
-                        <p>Real-time email filtering application using TF-IDF and Naive Bayes/SVM models. Built with
-                            Flask and deployed with a responsive UI for fast prediction and user-friendly experience.
-                        </p>
+                        <h3>InfoSnap</h3>
+                        <p class="project-tagline">AI-Powered Document Summarizer</p>
+                        <p>A revolutionary document summarization platform that saves hours of reading time. Using BART and CNN models with OCR technology, InfoSnap transforms lengthy documents into concise, multi-length summaries while supporting 15+ languages.</p>
                         <div class="project-features">
-                            <span><i class="fas fa-check"></i> Real-time Filtering</span>
-                            <span><i class="fas fa-check"></i> High Accuracy</span>
-                            <span><i class="fas fa-check"></i> Responsive UI</span>
+                            <span><i class="fas fa-check"></i> Multi-length Summaries</span>
+                            <span><i class="fas fa-check"></i> OCR Support</span>
+                            <span><i class="fas fa-check"></i> 15+ Languages</span>
+                            <span><i class="fas fa-check"></i> Download Option Available</span>
+                            
                         </div>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Transformers</span>
                             <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">NLP</span>
-                            <span class="tech-tag">SVM</span>
+                            <span class="tech-tag">OCR</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 3: AlgoSpark -->
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="project-image">
-                        <img src="Pictures/front.png" alt="ViewTube Clone">
+                        <div class="project-img-placeholder">
+                            <!-- Add project screenshot here -->
+                            <img src="Pictures/algospark.jpg" alt="AlgoSpark">
+                        </div>
                         <div class="project-overlay">
-                            <a href="https://github.com/aryadeep02/Sample-Portfolio/tree/main" class="project-link-icon"><i
-                                    class="fab fa-github"></i></a>
-                            <a href="https://boisterous-dango-ac8a03.netlify.app/" class="project-link-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/aryadeep02/AlgoSpark" target="_blank" class="project-link-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" onclick="openProjectModal('algospark')" class="project-link-icon">
+                                <i class="fas fa-expand"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Sample Portfolio Website Template</h3>
-                        <p>
-                            Designed and developed a responsive portfolio website template tailored for Josh Technology
-                            Group Assessment.
-                            Showcases clean UI, scalable structure, and reusable components, enabling easy customization
-                            for multiple profiles.
-                        </p>
+                        <h3>AlgoSpark</h3>
+                        <p class="project-tagline">Learn Algorithms Interactively</p>
+                        <p>An innovative platform that makes learning Data Structures and Algorithms engaging through interactive visualizations. With features like real-time sorting animations, search techniques, and a modern UI with dark mode support.</p>
                         <div class="project-features">
-                            <span><i class="fas fa-check"></i> Responsive & Modern Design</span>
-                            <span><i class="fas fa-check"></i> Customizable Components</span>
-                            <span><i class="fas fa-check"></i> SEO & Performance Optimized</span>
+                            <span><i class="fas fa-check"></i> Interactive Visualizations</span>
+                            <span><i class="fas fa-check"></i> Dark Mode</span>
+                            <span><i class="fas fa-check"></i> Modular Architecture</span>
                         </div>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">ShadCN</span>
+                            <span class="tech-tag">Sonner</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span>Certifications & Learning</span>
+            </h2>
+            <div class="cert-grid">
+                <div class="cert-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Probability & Statistics for ML</h3>
+                    <p class="cert-issuer">DeepLearning.AI</p>
+                    <p class="cert-date">2025</p>
+                    <p>Mastered statistical concepts essential for machine learning including distributions, hypothesis testing, and Bayesian inference.</p>
+                </div>
+
+                <div class="cert-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AgentBlazer Champion</h3>
+                    <p class="cert-issuer">SalesForce</p>
+                    <p class="cert-date">2024</p>
+                    <p>Recognized for excellence in developing AI-powered sales automation solutions using Salesforce platform.</p>
+                </div>
+
+                <div class="cert-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3>Google AI Essentials</h3>
+                    <p class="cert-issuer">Coursera</p>
+                    <p class="cert-date">2024</p>
+                    <p>Comprehensive understanding of AI fundamentals, ethical AI practices, and practical implementation strategies.</p>
+                </div>
+
+                <div class="cert-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="cert-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>DSA in Java</h3>
+                    <p class="cert-issuer">CodeChef</p>
+                    <p class="cert-date">2024</p>
+                    <p>Advanced proficiency in implementing complex data structures and algorithms using Java programming.</p>
                 </div>
             </div>
         </div>
@@ -366,59 +535,67 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+            <h2 class="section-title" data-aos="fade-up">
+                <span>Let's Build Something Amazing</span>
+            </h2>
             <div class="contact-wrapper">
                 <div class="contact-info" data-aos="fade-right">
                     <h3>Get In Touch</h3>
-                    <p>I'm actively looking for opportunities to work with innovative tech companies in 2025. Let's
-                        create something amazing together!</p>
+                    <p>I'm actively seeking opportunities to work on innovative projects that leverage AI/ML to solve real-world problems. Whether you have a challenging project, a startup idea, or just want to connect, I'd love to hear from you!</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>aryadeepv21@gmail.com</p>
+                                <a href="mailto:aryadeepv21@gmail.com">aryadeepv21@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <div>
                                 <h4>Phone</h4>
-                                <p>+91-6392853068</p>
+                                <a href="tel:+916392853068">+91-6392853068</a>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-
-                            <div class=" contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <h4>Location</h4>
-                                    <p>Kanpur, India</p>
-                                </div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Kanpur, Uttar Pradesh, India</p>
+                            </div>
                         </div>
                     </div>
                     <div class="social-links-contact">
-                        <a href="https://github.com/aryadeep02" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/aryadeep21" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/aryadeep22" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="https://hackerrank.com/ARYADEEP_V" class="social-link"><i class="fab fa-hackerrank"></i></a>
+                        <a href="https://github.com/aryadeep02" target="_blank" class="social-link-lg">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/aryadeep21" target="_blank" class="social-link-lg">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/aryadeep_varshney/" target="_blank" class="social-link-lg">
+                            <i class="fas fa-code"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="contact-form" data-aos="fade-left">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
-
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
-
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-
+                            <input type="text" id="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">
+                        <div class="form-group">
+                            <textarea id="message" placeholder=" " rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
@@ -431,13 +608,25 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Aryadeep Varshney. All rights reserved.</p>
-            <p>Built with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
+            <div class="footer-content">
+                <p>&copy; 2025 Aryadeep Varshney. Crafted with loads of ❤️ and ☕️</p>
+                <p>Building the future, one line at a time <i class="fas fa-rocket"></i></p>
+            </div>
         </div>
     </footer>
 
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="script.js"></script>
 </body>
 
