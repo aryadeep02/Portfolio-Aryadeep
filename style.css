@@ -1,9 +1,9 @@
-// Theme Toggle
+
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 const body = document.body;
 
-// Check for saved theme preference
+
 const currentTheme = localStorage.getItem('theme') || 'dark';
 if (currentTheme === 'light') {
     body.classList.add('light-theme');
@@ -35,7 +35,6 @@ window.addEventListener('load', () => {
     }, 1500);
 });
 
-// Particles.js Configuration
 particlesJS('particles-js', {
     particles: {
         number: {
@@ -161,11 +160,8 @@ function typeText() {
         setTimeout(typeText, isDeleting ? 50 : typingSpeed);
     }
 }
-
-// Start typing after loader
 setTimeout(typeText, 2000);
 
-// Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -179,7 +175,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar Scroll Effect
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
@@ -188,8 +183,6 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
 });
-
-// Mobile Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -205,7 +198,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Active Navigation Link
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -227,7 +219,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Animate Skill Bars
 const observerOptions = {
     threshold: 0.5,
     rootMargin: '0px'
@@ -262,7 +253,6 @@ if (typeof AOS !== 'undefined') {
     });
 }
 
-// Counter Animation
 function animateCounter(element, target) {
     let current = 0;
     const increment = target / 50;
@@ -276,7 +266,6 @@ function animateCounter(element, target) {
     }, 30);
 }
 
-// Observe stat numbers
 const statNumbers = document.querySelectorAll('.stat-number');
 const statObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -290,7 +279,6 @@ const statObserver = new IntersectionObserver((entries) => {
 
 statNumbers.forEach(stat => statObserver.observe(stat));
 
-// Contact Form Handling
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -314,7 +302,6 @@ if (contactForm) {
     });
 }
 
-// Notification System
 function showNotification(message, type = 'success') {
     const notification = document.createElement('div');
     notification.className = `notification ${type}`;
@@ -343,14 +330,12 @@ function showNotification(message, type = 'success') {
         maxWidth: '400px'
     });
     
-    // Remove after 5 seconds
     setTimeout(() => {
         notification.style.animation = 'slideOut 0.5s ease';
         setTimeout(() => notification.remove(), 500);
     }, 5000);
 }
 
-// Project Modal Functions
 function openProjectModal(projectId) {
     const modal = document.getElementById('projectModal');
     const modalContent = document.getElementById('modalContent');
