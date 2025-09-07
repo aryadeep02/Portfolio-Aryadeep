@@ -375,7 +375,7 @@ function openProjectModal(projectId) {
                 <p>The backend is powered by Flask and Python, leveraging scikit-learn for machine learning models. The frontend uses Bootstrap for responsive design, ensuring accessibility across all devices. The system processes over 130+ symptoms to identify 40+ common diseases.</p>
                 
                 <h3>Impact</h3>
-                <p>CureChat AI has the potential to serve as a first-line health advisor, especially in areas with limited medical access. By providing quick, accurate health insights, it empowers users to make informed decisions about their health.</p>
+                <p>CureGenix AI has the potential to serve as a first-line health advisor, especially in areas with limited medical access. By providing quick, accurate health insights, it empowers users to make informed decisions about their health.</p>
                 
                 <div class="modal-tech-stack">
                     <span>Python</span>
